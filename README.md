@@ -24,7 +24,7 @@ TODO: Write history
 
 ## Credits
 
-TODO: Write credits
+Learning to build gradients using SASS Mixin - https://www.sitepoint.com/building-linear-gradient-mixin-sass/
 
 ## License
 
