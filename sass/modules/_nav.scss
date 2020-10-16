@@ -1,0 +1,19 @@
+ #mainNav {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     margin: 0 auto;
+     //  background-color: blue;
+     #mainLogo {
+         width: 164px;
+         height: 100%;
+     }
+     .navList {
+         display: flex;
+         justify-content: flex-end;
+         //  background-color: aqua;
+         .navLink {
+             text-decoration: none;
+         }
+     }
+ }

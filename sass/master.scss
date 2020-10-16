@@ -1,0 +1,16 @@
+@import './modules/_reset.scss';
+@import './modules/_vars.scss';
+@import './modules/_mixins.scss';
+@import './modules/_text.scss';
+@import './modules/_button.scss';
+@import './modules/_nav.scss';
+@import './modules/_hero.scss';
+@import './modules/_skills.scss';
+@import './modules/_footer.scss';
+.hidden {
+    display: none;
+}
+
+#container {
+    font-family: 'Karla', sans-serif;
+}
