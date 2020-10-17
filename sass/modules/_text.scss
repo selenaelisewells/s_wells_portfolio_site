@@ -2,9 +2,9 @@
     // color: $dark-blue;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 3.125rem;
+    font-size: rem-calc(40);
     text-align: center;
-    padding-bottom: 3.125rem;
+    padding-bottom: rem-calc(40);
 }
 
 .white {
@@ -13,6 +13,10 @@
 
 .dark-blue {
     color: $dark-blue;
+}
+
+.teal {
+    color: $teal;
 }
 
 .subHeading {
@@ -24,7 +28,7 @@
 }
 
 li,
-.p-text {
+.p-Txt {
     font-size: 1.5rem;
     font-weight: normal;
     color: $dark-gray;

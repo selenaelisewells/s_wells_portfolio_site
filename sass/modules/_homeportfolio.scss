@@ -20,7 +20,7 @@
     .smallGallery {
         display: flex;
         flex-direction: column;
-        margin: rem-calc(-180) 0 rem-calc(-100);
+        margin-top: rem-calc(-180);
         background-color: white;
     }
 }

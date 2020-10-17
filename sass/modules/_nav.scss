@@ -3,6 +3,7 @@
      flex-direction: row-reverse;
      justify-content: space-between;
      margin: 0 auto;
+     padding: rem-calc(10);
      //  background-color: blue;
      #mainLogo {
          width: 164px;
@@ -14,6 +15,12 @@
          //  background-color: aqua;
          .navLink {
              text-decoration: none;
+             display: none;
          }
      }
+ }
+ 
+ .smallNav {
+     background-image: url(../../images/smNav.png);
+     height: rem-calc(200);
  }

@@ -4,48 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swells Gallery</title>
+    <title>Swells About</title>
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="container">
-        <h1 class="hidden">Swells Gallery</h1>
-        <nav id="mainNav">
+        <h1 class="hidden">Swells About</h1>
+        <nav id="mainNav" class="smallNav">
             <h2 class="hidden">Main Navigation</h2>
-            <button class="menuButton" id="js-navbar-toggle"></button>
+            <a class="menuButton" id="js-navbar-toggle"><img src="./images/menu.svg" alt="menuBtn"></a>
             <ul class="navList">
-                <li><a href="#" class="navLink">About Me</a></li>
-                <li><a href="#" class="navLink">Gallery</a></li>
-                <li><a href="#" class="navLink">Contact</a></li>
+                <li><a href="index.html" class="navLink">Home</a></li>
+                <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
+                <li><a href="about.html" class="navLink">About Me</a></li>
             </ul>
-            <div id="mainLogo"></div>
+            <div id="mainLogo">
+                <img src="./images/mainLogo.svg" alt="Swells Logo">
+            </div>
         </nav>
         <div id="aboutWrap">
             <h2 class="title">About Me</h2>
             <section id="selena">
-                <img class="profilePic" src="#" alt="selena profile picture">
+                <img class="profilePic" src="./images/Selena.png" alt="selena profile picture">
                 <div class="profileTxtWrap">
-                    <h2 class="heading">Hi, I'm Selena Wells</h2>
+                    <h2 class="heading teal">Hi, I'm Selena</h2>
                     <p class="p-Txt">I am a crazy and quirky artist passionate about creating experiences for people through design. I strive to deliver creative and innovative design solutions.</p>
                 </div>
 
             </section>
             <div id="resumeWrap">
                 <section class="resumeBanner">
-                    <h2 class="heading">Portfolio</h2>
-                    <p class="bannerTxt">A portfolio tells a thousand words. So have a look at mine!</p>
+                    <h2 class="heading white">Resume</h2>
+                    <p class="bannerTxt white">My path has not been linear but I have learned a lot on the journey to where I am today. Here is the roadmap of how I got there.</p>
                 </section>
                 <section id="resume">
                     <div class="experience">
-                        <h2 class="heading">Experience</h2>
+                        <h2 class="heading dark-blue">Experience</h2>
                         <div class="resumeItem">
                             <h3 class="resumeHeading">
                                 <span class="light-resumeHeading">A.T. Financial Group Inc. —</span> Freelance Web Designer
                             </h3>
                             <p class="res-date">AUGUST 2020 - PRESENT</p>
-                            <p class="p-txt res-description">Worked with a team of myself and two developers to redesign a 10 page insurance site with consideration of modern UI/UX and design practises. Responsive web design created using Adobe XD, Adobe Photoshop and Adobe Illustrator.
+                            <p class="p-Txt res-description">Worked with a team of myself and two developers to redesign a 10 page insurance site with consideration of modern UI/UX and design practises. Responsive web design created using Adobe XD, Adobe Photoshop and Adobe Illustrator.
                             </p>
                         </div>
                         <div class="resumeItem">
@@ -53,7 +55,7 @@
                                 <span class="light-resumeHeading">Michaels —</span> Framer/Sales Associate/Seasonal Manager
                             </h3>
                             <p class="res-date">AUGUST 2019 - AUGUST 2020</p>
-                            <p class="p-txt res-description">Helped customers design and order frames. Worked in the frame shop assembling custom frame orders. Worked as a seasonal manager from October to January. Held managerial responsibilities such as key holding, delegating tasks
+                            <p class="p-Txt res-description">Helped customers design and order frames. Worked in the frame shop assembling custom frame orders. Worked as a seasonal manager from October to January. Held managerial responsibilities such as key holding, delegating tasks
                                 and working with customer complaints.
                             </p>
                         </div>
@@ -63,7 +65,7 @@
                             </h3>
                             <p class="res-date">SEPTEMBER 2018 - PRESENT
                             </p>
-                            <p class="p-txt res-description">Innovated within the digital art field utilizing photoshop to create accurate proprietary AI trackers . Delivered a comprehensive motion graphics video of an anatomical arm by leveraging 3Ds Max and After Effects.
+                            <p class="p-Txt res-description">Innovated within the digital art field utilizing photoshop to create accurate proprietary AI trackers . Delivered a comprehensive motion graphics video of an anatomical arm by leveraging 3Ds Max and After Effects.
 
                             </p>
                         </div>
@@ -74,7 +76,7 @@
                             <p class="res-date"> JANUARY 2016 - PRESENT
 
                             </p>
-                            <p class="p-txt res-description">Produced efficient 3D game assets and UI Collaborates with clients worldwide to create personalized, modern digital art for implementation in websites, print and product design. assets and animations utilizing photoshop, illustrator,
+                            <p class="p-Txt res-description">Produced efficient 3D game assets and UI Collaborates with clients worldwide to create personalized, modern digital art for implementation in websites, print and product design. assets and animations utilizing photoshop, illustrator,
                                 and 3DsMax.
                             </p>
                         </div>
@@ -84,7 +86,7 @@
                             </h3>
                             <p class="res-date">JULY 2018 - JANUARY 2020
                             </p>
-                            <p class="p-txt res-description">Produced efficient 3D game assets and UI for VR gaming for personal wellness applications. Raised money and awareness for mental health initiatives through the planning and execution of a mental health coffee house.
+                            <p class="p-Txt res-description">Produced efficient 3D game assets and UI for VR gaming for personal wellness applications. Raised money and awareness for mental health initiatives through the planning and execution of a mental health coffee house.
                             </p>
                         </div>
                         <div class="resumeItem">
@@ -93,13 +95,13 @@
                             </h3>
                             <p class="res-date">JUNE 2016 - AUGUST 2016
                             </p>
-                            <p class="p-txt res-description">Leveraged traditional art skills to mentor and a group of highschool students to design and paint a community mural. Taught the students art fundamentals and worked with them to create fun and innovative designs and paint the
+                            <p class="p-Txt res-description">Leveraged traditional art skills to mentor and a group of highschool students to design and paint a community mural. Taught the students art fundamentals and worked with them to create fun and innovative designs and paint the
                                 mural on a community store.
                             </p>
                         </div>
                     </div>
 
-                    <div class="eduction">
+                    <div class="education">
                         <h2 class="heading">Eduction</h2>
                         <div class="resumeItem">
                             <h3 class="resumeHeading">
@@ -107,7 +109,7 @@
                             </h3>
                             <p class="res-date">JANUARY 2020 - PRESENT
                             </p>
-                            <p class="p-txt res-description">Dean’s Honour Roll. Learning how to design and code for the modern web. Polishing design skills - logo design, digital art and web design. Learing front-end and back-end web developement.
+                            <p class="p-Txt res-description">Dean’s Honour Roll. Learning how to design and code for the modern web. Polishing design skills - logo design, digital art and web design. Learing front-end and back-end web developement.
                             </p>
                         </div>
                         <div class="resumeItem">
@@ -116,7 +118,7 @@
                             </h3>
                             <p class="res-date">SEPTEMBER 2015 - APRIL 2018
                             </p>
-                            <p class="p-txt res-description">Dean’s Honour Roll. Learned game development processes. Learned to create efficient game assets and design fun and appealing games.
+                            <p class="p-Txt res-description">Dean’s Honour Roll. Learned game development processes. Learned to create efficient game assets and design fun and appealing games.
                             </p>
                         </div>
                         <div class="resumeItem">
@@ -127,7 +129,7 @@
                             <p class="res-date">SEPTEMBER 2014 - JUNE 2015
 
                             </p>
-                            <p class="p-txt res-description">Learned art fundamentals in every art area, from ceramics and painting to film and photography.
+                            <p class="p-Txt res-description">Learned art fundamentals in every art area, from ceramics and painting to film and photography.
                             </p>
                         </div>
                     </div>
@@ -137,7 +139,7 @@
 
         <footer id="footer">
             <div class="returnTop">
-                <a href="#" class="returnBtn"></a>
+                <a href="#" class="returnBtn"><img src="./images/arrow.png" alt=""></a>
                 <p class="returnTxt">Back to Top</p>
             </div>
             <div class="footerTxt">
@@ -148,7 +150,7 @@
             </div>
         </footer>
     </div>
-
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
