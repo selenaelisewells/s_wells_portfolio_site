@@ -1,0 +1,42 @@
+.heading {
+    // color: $dark-blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: rem-calc(40);
+    text-align: center;
+    padding-bottom: rem-calc(40);
+}
+
+.white {
+    color: white;
+}
+
+.dark-blue {
+    color: $dark-blue;
+}
+
+.teal {
+    color: $teal;
+}
+
+.subHeading {
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+li,
+.p-Txt {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: $dark-gray;
+    line-height: 3.125rem;
+}
+
+.bannerTxt {
+    font-size: 2.5rem;
+    // color: white;
+    text-align: center;
+}

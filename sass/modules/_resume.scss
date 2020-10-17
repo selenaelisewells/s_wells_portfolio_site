@@ -1,0 +1,37 @@
+.resumeBanner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../images/banner.png);
+    height: rem-calc(550);
+    .bannerTxt {
+        width: 80%;
+    }
+    .heading {
+        padding-top: rem-calc(50);
+    }
+}
+
+.experience,
+.education {
+    width: 80%;
+    padding-top: rem-calc(50);
+    margin: 0 auto;
+}
+
+.resumeItem {
+    padding-bottom: rem-calc(20);
+    .res-date {
+        font-size: rem-calc(24);
+        padding: rem-calc(10) 0;
+    }
+    .resumeHeading {
+        font-size: rem-calc(30);
+        padding: rem-calc(20) 0;
+        font-weight: bold;
+        line-height: rem-calc(50);
+        .light-resumeHeading {
+            font-weight: normal;
+        }
+    }
+}

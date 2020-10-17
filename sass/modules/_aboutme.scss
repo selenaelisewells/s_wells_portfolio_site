@@ -1,0 +1,24 @@
+#aboutWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    #selena {
+        margin: rem-calc(40) 0;
+        display: flex;
+        flex-direction: column;
+        border: 4px solid $teal;
+        padding: rem-calc(20) 0;
+        .profilePic {
+            margin-top: rem-calc(-50);
+            position: absolute;
+            align-self: center;
+            margin-bottom: rem-calc(20);
+        }
+        .profileTxtWrap {
+            padding-top: rem-calc(300);
+            width: 80%;
+            align-self: center;
+        }
+    }
+}

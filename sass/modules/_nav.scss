@@ -1,0 +1,44 @@
+ #mainNav {
+     display: flex;
+     align-self: center;
+     //  flex-direction: row-reverse;
+     justify-content: space-between;
+     padding: rem-calc(10);
+     //  background-color: blue;
+     #mainLogo {
+         width: rem-calc(164);
+         height: 100%;
+     }
+     .navWrap {
+         position: absolute;
+         background: $primary-gradient;
+         border-radius: 0 3.125rem 3.125rem 0;
+         padding: 30px;
+         justify-content: flex-end;
+         margin-left: rem-calc(-10);
+         z-index: 1;
+         display: none;
+         &.selected {
+             display: flex;
+         }
+         //  background-color: aqua;
+         .navLink {
+             text-decoration: none;
+             color: white;
+             text-transform: uppercase;
+             &:hover {
+                 color: $dark-blue;
+                 font-weight: bold;
+             }
+         }
+     }
+ }
+ 
+ .smallNav {
+     background-image: url(../../images/smNav.png);
+     height: rem-calc(200);
+ }
+ 
+ .selected {
+     display: flex;
+ }

@@ -1,0 +1,26 @@
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    .banner {
+        background-image: url(../../images/banner.png);
+        height: rem-calc(650);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        .bannerWrap {
+            width: 80%;
+            margin: 0 auto;
+            padding: 3.125rem 0;
+        }
+    }
+    .smallGallery {
+        display: flex;
+        flex-direction: column;
+        margin-top: rem-calc(-180);
+        background-color: white;
+    }
+}

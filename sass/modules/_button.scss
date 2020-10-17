@@ -1,0 +1,7 @@
+.button {
+    @include gradient-button;
+}
+
+.menuButton {
+    width: rem-calc(60);
+}

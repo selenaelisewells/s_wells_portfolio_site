@@ -1,0 +1,28 @@
+#footer {
+    background-color: $teal;
+    display: flex;
+    flex-direction: column;
+    margin-top: rem-calc(50);
+    .footerTxt {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        padding: rem-calc(60) 0;
+        .bannerTxt {
+            padding: rem-calc(40) 0;
+        }
+    }
+    .returnTop {
+        padding: rem-calc(20);
+        margin-top: rem-calc(-45);
+        text-align: center;
+        position: absolute;
+        align-self: center;
+        color: white;
+        &:hover {
+            color: $dark-blue;
+            cursor: pointer;
+        }
+    }
+}

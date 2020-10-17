@@ -1,0 +1,31 @@
+.header {
+    background-image: url("../../images/smHeroImg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+#heroImg {
+    // height: 812px;
+    width: 100%;
+    // margin: rem-calc(-100) auto 0 auto;
+    display: flex;
+    justify-content: center;
+    .heroTxtWrap {
+        display: flex;
+        flex-direction: column;
+        margin: rem-calc(100) 0;
+        align-items: center;
+        width: 80%;
+        color: white;
+        text-align: center;
+        .heroHeading {
+            font-size: rem-calc(45);
+            padding-bottom: rem-calc(50);
+        }
+        .heroSubHeading {
+            font-size: rem-calc(40);
+            line-height: rem-calc(47);
+            padding-bottom: rem-calc(80);
+        }
+    }
+}
