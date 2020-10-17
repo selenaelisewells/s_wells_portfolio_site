@@ -1,1 +1,9 @@
-//set up a linear gradient mixin here: https://www.sitepoint.com/building-linear-gradient-mixin-sass/
+@mixin gradient-button( $background: $primary-gradient, $padding: 1.5rem 3.125rem, $colour: white) {
+    background: $background;
+    border-radius: 3.125rem;
+    padding: $padding;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $colour;
+}
