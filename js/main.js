@@ -1,7 +1,7 @@
 (() => {
 
 
-    let mainNav = document.getElementById('mainNav');
+    let mainNav = document.querySelector('.navWrap');
     let navBarToggle = document.getElementById('js-navbar-toggle');
 
     navBarToggle.addEventListener('click', function() {

@@ -12,20 +12,24 @@
 <body>
     <div id="container">
         <h1 class="hidden">Swells Home</h1>
-        <nav id="mainNav">
-            <h2 class="hidden">Main Navigation</h2>
-            <a class="menuButton" id="js-navbar-toggle"><img src="./images/menu.svg" alt="menuBtn"></a>
-            <ul class="navList">
-                <li><a href="index.html" class="navLink">Home</a></li>
-                <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
-                <li><a href="about.html" class="navLink">About Me</a></li>
-            </ul>
-            <div id="mainLogo">
-                <img src="./images/mainLogo.svg" alt="Swells Logo">
-            </div>
-        </nav>
-        <div id="mainContent">
-            <h2 class="hidden">Main Content</h2>
+        <header class="header">
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <div id="mainLogo">
+                    <img src="./images/mainLogo.svg" alt="Swells Logo">
+                </div>
+
+                <a class="menuButton" id="js-navbar-toggle"><img src="./images/menu.svg" alt="menuBtn"></a>
+
+                <div class="navWrap">
+                    <ul class="navList">
+                        <li><a href="index.html" class="navLink">Home</a></li>
+                        <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
+                        <li><a href="about.html" class="navLink">About Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+
             <section id="heroImg">
                 <div class="heroTxtWrap">
                     <h2 class="heroHeading">Hi, I'm Selena.</h2>
@@ -36,6 +40,9 @@
                     <a href="#" class="scroll"></a>
                 </div>
             </section>
+        </header>
+        <div id="mainContent">
+            <h2 class="hidden">Main Content</h2>
             <section id="mySkills">
                 <h2 class="heading dark-blue">My Skills</h2>
                 <div class="skills">
