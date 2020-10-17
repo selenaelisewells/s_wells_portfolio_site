@@ -1,6 +1,7 @@
 # Selena Wells Portfolio Site
 
 This is my portfolio site displaying the various works I have done over the years. Want to learn more about me? Check it out!
+This is a work in progress - checkout my developer road-map to see what is in store - https://docs.google.com/document/d/1579Kp0PBZ7JcH0ji3eCp8qSNYofPLoZPe3quWcPyJmo/edit?usp=sharing
 
 ## Installation
 
