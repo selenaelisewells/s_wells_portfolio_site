@@ -20,6 +20,9 @@
         position: absolute;
         align-self: center;
         color: white;
+        @media (min-width: 600px) {
+            align-self: flex-end;
+        }
         &:hover {
             color: $dark-blue;
             cursor: pointer;
