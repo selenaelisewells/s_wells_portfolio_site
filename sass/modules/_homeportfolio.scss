@@ -5,7 +5,7 @@
     margin: 0 auto;
     width: 100%;
     .banner {
-        background-image: url(../../images/banner.png);
+        background-image: url(../../images/banner.svg);
         height: rem-calc(650);
         display: flex;
         flex-direction: column;
@@ -13,7 +13,7 @@
         color: white;
         @media (min-width: 600px) {
             width: 100%;
-            background-image: url(../../images/bannerLg.png);
+            background-image: url(../../images/bannerLg.svg);
         }
         .bannerWrap {
             width: 80%;

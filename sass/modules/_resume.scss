@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(../../images/banner.png);
+    background-image: url(../../images/banner.svg);
     height: rem-calc(550);
     @media (min-width: 600px) {
-        background-image: url(../../images/bannerLg.png);
+        background-image: url(../../images/bannerLg.svg);
         height: 400px;
     }
     .bannerTxt {
