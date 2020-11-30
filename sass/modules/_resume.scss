@@ -4,6 +4,10 @@
     flex-direction: column;
     background-image: url(../../images/banner.png);
     height: rem-calc(550);
+    @media (min-width: 600px) {
+        background-image: url(../../images/bannerLg.png);
+        height: 400px;
+    }
     .bannerTxt {
         width: 80%;
     }
