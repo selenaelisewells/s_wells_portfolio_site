@@ -11,6 +11,10 @@
         flex-direction: column;
         align-items: center;
         color: white;
+        @media (min-width: 600px) {
+            width: 100%;
+            background-image: url(../../images/bannerLg.png);
+        }
         .bannerWrap {
             width: 80%;
             margin: 0 auto;
@@ -22,5 +26,11 @@
         flex-direction: column;
         margin-top: rem-calc(-180);
         background-color: white;
+        @media (min-width: 600px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1300px;
+        }
     }
 }
