@@ -1,5 +1,8 @@
 .button {
     @include gradient-button;
+    &:hover {
+        @include gradient-button-hover
+    }
 }
 
 .menuButton {

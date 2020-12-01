@@ -43,8 +43,8 @@
                      padding: 0 1.5rem;
                  }
                  &:hover {
-                     color: $dark-blue;
-                     font-weight: bold;
+                     text-decoration: underline;
+                     //  font-weight: bold;
                  }
              }
          }
@@ -52,7 +52,7 @@
  }
  
  .smallNav {
-     background-image: url(../../images/bannerLg.svg);
+     background-image: url(../../images/heroImg.svg);
      height: rem-calc(200);
  }
  
