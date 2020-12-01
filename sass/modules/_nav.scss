@@ -18,7 +18,7 @@
          margin-left: rem-calc(-10);
          z-index: 1;
          display: none;
-         @media (min-width: 600px) {
+         @media (min-width: 700px) {
              display: flex;
              position: relative;
              background: none;
@@ -30,7 +30,7 @@
          }
          //  background-color: aqua;
          .navList {
-             @media (min-width: 600px) {
+             @media (min-width: 700px) {
                  display: flex;
                  flex-direction: row;
              }
@@ -38,7 +38,7 @@
                  text-decoration: none;
                  color: white;
                  //text-transform: uppercase;
-                 @media (min-width: rem-calc(600)) {
+                 @media (min-width: rem-calc(700)) {
                      display: flex;
                      padding: 0 1.5rem;
                  }
@@ -54,6 +54,7 @@
  .smallNav {
      background-image: url(../../images/heroImg.svg);
      height: rem-calc(200);
+     background-position: center;
  }
  
  .selected {
