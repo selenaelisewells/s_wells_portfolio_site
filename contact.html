@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swells Gallery</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
 
         <h2 class="title">Contact Me</h2>
 
-        <form action="./includes/mail/send.php" method="POST" id="mail-form">
+        <form action="./includes/send.php" method="POST" id="mail-form">
             <label class="label" for="topic">Topic</label>
             <select name="topic" id="topic">
                 <option value="default" >--Choose A Topic--</option>

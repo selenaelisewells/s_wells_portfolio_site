@@ -1,4 +1,4 @@
-import { SendMail } from "./components/mailer.js";
+import { SendMail } from "./modules/mailer.js";
 (() => {
 
 

@@ -73,7 +73,7 @@ $email_message = sprintf('Topic: %s, Name: %s, Email: %s, Message: %s',$topic_me
 //make sure you run the code in PHP 7.4+
 //otherwise you would need to $email_headers a string
 $email_headers = array(
-    'From' =>'selenawells@selenawells.ca',
+    'From' =>'contact@selenawells.ca',
     'Reply-To' => $visitor_email
     //Best practise  but it may need to to have an email set up via your domaine - do it this way so that the emails are not flagged by the browser
 
