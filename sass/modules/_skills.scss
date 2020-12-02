@@ -16,11 +16,12 @@
             flex-wrap: wrap;
             justify-content: space-around;
             width: 100%;
-            max-width: 1300px;
+            max-width: 1500px;
         }
         .skill {
             padding-bottom: 3.125rem;
             .skillBadge {
+                width: 200px;
                 padding: 1.25rem 0;
             }
             @media (min-width: 600px) {
@@ -28,7 +29,7 @@
                 padding: 1.24rem 0;
                 flex-basis: 50%;
             }
-            @media (min-width: 915px) {
+            @media (min-width: 980px) {
                 box-sizing: border-box;
                 padding: 1.24rem 1.24rem;
                 flex-basis: 25%;

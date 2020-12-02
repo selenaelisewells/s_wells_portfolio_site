@@ -39,8 +39,12 @@
                  color: white;
                  //text-transform: uppercase;
                  @media (min-width: rem-calc(700)) {
+                     border-right: 2px white solid;
                      display: flex;
                      padding: 0 1.5rem;
+                     &.last {
+                         border: none;
+                     }
                  }
                  &:hover {
                      text-decoration: underline;
