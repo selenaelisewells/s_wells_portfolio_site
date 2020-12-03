@@ -1,4 +1,5 @@
 import { SendMail } from "./modules/mailer.js";
+import { showError, removeError } from "./modules/validator.js";
 (() => {
 
 
@@ -14,7 +15,7 @@ import { SendMail } from "./modules/mailer.js";
 
 
 
-    let mailSubmit = document.querySelector('.submit-wrapper');
+    let contactForm = document.querySelector('#mail-form');
 
     function processMailFailure(result) {
         // show a failure message in the UI
@@ -37,14 +38,32 @@ import { SendMail } from "./modules/mailer.js";
         event.preventDefault();
 
         // use the SendMail component to try to process mail
-        SendMail(this.parentNode)
+        SendMail(event.target)
             .then(data => processMailSuccess(data))
             .catch(err => processMailFailure(err));
 
         // the error handler in the catch block could actually be a generic catch-and-display function that handles EVERY error you might encounter during runtime. Might be a better strategy to pass in a flag or just a message and have the function display it in the UI
     }
 
-    mailSubmit.addEventListener("click", processMail);
+    contactForm.addEventListener("submit", processMail);
+
+    const formInputs = document.querySelectorAll("input,select,textarea");
+
+    formInputs.forEach(input => {
+        input.addEventListener("change", event => {
+            console.log("its working potato")
+            const element = event.currentTarget;
+            console.log(element.required);
+            if (!element.required) {
+                return;
+            }
+            if (!element.checkValidity()) {
+                return showError(element, element.dataset.errorMessage);
+            }
+        });
+
+    })
+
 
 
 })();
