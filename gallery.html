@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swells Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
-<body id="app">
-    <div id="container">
+<body>
+    <div id="container" class="app">
         <h1 class="hidden">Swells Gallery</h1>
         <nav id="mainNav" class="smallNav">
             <h2 class="hidden">Main Navigation</h2>
@@ -31,22 +32,14 @@
         </nav>
         <section id="galleryWrap">
             <h2 class="title">Portfolio</h2>
-            <video id="demoReel" controls poster="/images/videoThumb.jpg">
+            <video id="demoReel" controls poster="./images/videoThumb.jpg">
             
-                <source src="/images/Wells_DemoReel.mp4"  type="video/mp4">
+                <source src="./images/Wells_DemoReel.mp4"  type="video/mp4">
             
                 Sorry, your browser doesn't support embedded videos.
             </video>
-            <div class="gallery">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
+            <portfolio-container></portfolio-container>
 
-                <!--insert gallery here-->
-            </div>
         </section>
         <footer id="footer">
             <div class="returnTop">

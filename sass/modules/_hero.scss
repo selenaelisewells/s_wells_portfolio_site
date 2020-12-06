@@ -1,9 +1,9 @@
 .header {
-    background-image: url("../../images/HeroImgSm.svg");
+    background-image: url("../images/HeroImgSm.svg");
     background-size: cover;
     height: 100vh;
     @media (min-width: 600px) {
-        background-image: url("../../images/heroImg.svg");
+        background-image: url("../images/heroImg.svg");
         background-size: cover;
         padding: 0;
     }
