@@ -1,5 +1,8 @@
 #footer {
-    background-color: $teal;
+    background-image: url(../images/footerImg.svg);
+    background-size: cover;
+    background-position: center;
+    // background-color: $teal;
     display: flex;
     flex-direction: column;
     margin-top: rem-calc(50);
@@ -20,8 +23,11 @@
         position: absolute;
         align-self: center;
         color: white;
+        @media (min-width: 600px) {
+            align-self: flex-end;
+        }
         &:hover {
-            color: $dark-blue;
+            text-decoration: underline;
             cursor: pointer;
         }
     }

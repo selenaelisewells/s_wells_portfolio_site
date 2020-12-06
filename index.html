@@ -7,10 +7,11 @@
     <title>SWells Home</title>
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" class="app">
         <h1 class="hidden">Swells Home</h1>
         <header class="header">
             <nav id="mainNav">
@@ -19,13 +20,14 @@
                     <img src="./images/mainLogo.svg" alt="Swells Logo">
                 </div>
 
-                <a class="menuButton" id="js-navbar-toggle"><img src="./images/menu.svg" alt="menuBtn"></a>
+                <a class="menuButton" id="js-navbar-toggle"><img src="./images/menu.svg" alt="menu button"></a>
 
                 <div class="navWrap">
                     <ul class="navList">
                         <li><a href="index.html" class="navLink">Home</a></li>
-                        <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
-                        <li><a href="about.html" class="navLink">About Me</a></li>
+                        <li><a href="gallery.html" class="navLink">Portfolio</a></li>
+                        <li><a href="about.html" class="navLink ">About Me</a></li>
+                        <li><a href="contact.html" class="navLink last">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -33,12 +35,12 @@
             <section id="heroImg">
                 <div class="heroTxtWrap">
                     <h2 class="heroHeading">Hi, I'm Selena.</h2>
-                    <p class="heroSubHeading">Designer, Creative Professional, & Quirky Human.</p>
-                    <a href="#" class="button">Get to know me!</a>
+                    <p class="heroSubHeading">Designer,<br/> Creative Professional, <br/>& Quirky Human.</p>
+                    <a href="#mainContent" class="button">Get to know me!</a>
                 </div>
-                <div class="heroScroll">
-                    <a href="#" class="scroll"></a>
-                </div>
+                <!-- <div class="heroScroll">
+                    <a href="#" class="scroll"><img src="/images/Scroll.svg" alt="scroll down"></a>
+                </div> -->
             </section>
         </header>
         <div id="mainContent">
@@ -48,7 +50,7 @@
                 <div class="skills">
                     <div class="skill">
                         <h3 class="subHeading">Design</h3>
-                        <img class="skillBadge" src="./images/skillBadge.png" alt="skill badge">
+                        <img class="skillBadge" src="./images/design-badge.svg" alt="skill badge">
                         <ul class="skillList">
                             <li>Photoshop</li>
                             <li>Illustrator</li>
@@ -58,7 +60,7 @@
                     </div>
                     <div class="skill">
                         <h3 class="subHeading">3D/Motion</h3>
-                        <img class="skillBadge" src="./images/skillBadge.png" alt="skill badge">
+                        <img class="skillBadge" src="./images/motion-badge.svg" alt="skill badge">
                         <ul class="skillList">
                             <li>Cinema4D</li>
                             <li>3dsMax</li>
@@ -69,7 +71,7 @@
                     </div>
                     <div class="skill">
                         <h3 class="subHeading">Front End</h3>
-                        <img class="skillBadge" src="./images/skillBadge.png" alt="skill badge">
+                        <img class="skillBadge" src="./images/front-badge.svg" alt="skill badge">
                         <ul class="skillList">
                             <li>HTML5</li>
                             <li>SASS</li>
@@ -79,7 +81,7 @@
                     </div>
                     <div class="skill">
                         <h3 class="subHeading">Soft Skills</h3>
-                        <img class="skillBadge" src="./images/skillBadge.png" alt="skill badge">
+                        <img class="skillBadge" src="./images/soft-badge.svg" alt="skill badge">
                         <ul class="skillList">
                             <li>Leader</li>
                             <li>Teammate</li>
@@ -88,7 +90,7 @@
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="button">Checkout my resume! </a>
+                <a href="about.html" class="button">Checkout my resume! </a>
             </section>
             <section id="portfolio">
                 <div class="banner">
@@ -96,16 +98,11 @@
                         <h2 class="heading white">Portfolio</h2>
                         <p class="bannerTxt">A portfolio tells a thousand words. So have a look at mine!</p>
                     </div>
-                    <a href="#" class="button">View Full Gallery</a>
+                    <a href="gallery.html" class="button">View Full Gallery</a>
 
                 </div>
-                <div class="smallGallery">
-                    <img src="./images/flowerHead.png" alt="flower head">
-                    <img src="./images/flowerHead.png" alt="flower head">
-                    <img src="./images/flowerHead.png" alt="flower head">
-                    <img src="./images/flowerHead.png" alt="flower head">
-                    <img src="./images/flowerHead.png" alt="flower head">
-                    <img src="./images/flowerHead.png" alt="flower head">
+                <div class="galleryWrap index-gallery">
+                    <portfolio-container></portfolio-container>
 
                     <!--insert images here-->
                 </div>
@@ -119,7 +116,7 @@
                     <h2 class="heading white">Contact</h2>
                     <p>Have questions? Wanna Chat? Interested In Collaborating?</p>
                     <p class="bannerTxt">Shoot me a message and we can talk :)</p>
-                    <p>selena.elise.wells@gmail.com</p>
+                    <a href="about.html" class="button">Contact Me</a>
                 </div>
             </footer>
         </div>

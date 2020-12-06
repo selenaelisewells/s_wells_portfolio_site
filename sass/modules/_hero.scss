@@ -1,7 +1,12 @@
 .header {
-    background-image: url("../../images/smHeroImg.png");
+    background-image: url("../images/HeroImgSm.svg");
     background-size: cover;
     height: 100vh;
+    @media (min-width: 600px) {
+        background-image: url("../images/heroImg.svg");
+        background-size: cover;
+        padding: 0;
+    }
 }
 
 #heroImg {
@@ -10,6 +15,9 @@
     // margin: rem-calc(-100) auto 0 auto;
     display: flex;
     justify-content: center;
+    @media (min-width: 600px) {
+        justify-content: left;
+    }
     .heroTxtWrap {
         display: flex;
         flex-direction: column;
@@ -18,7 +26,13 @@
         width: 80%;
         color: white;
         text-align: center;
+        @media (min-width: 600px) {
+            text-align: left;
+            margin-left: 10%;
+            align-items: flex-start;
+        }
         .heroHeading {
+            margin-top: 6rem;
             font-size: rem-calc(45);
             padding-bottom: rem-calc(50);
         }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swells Contact</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="container" class="app">
+        <hello-world message="hello world!"></hello-world>
+        <h1 class="hidden">Swells Contact</h1>
+        <nav id="mainNav" class="smallNav">
+            <h2 class="hidden">Main Navigation</h2>
+            <div id="mainLogo">
+                <img src="./images/mainLogo.svg" alt="Swells Logo">
+            </div>
+
+            <a class="menuButton" id="js-navbar-toggle"><img src="./images/menu.svg" alt="menuBtn"></a>
+
+            <div class="navWrap">
+                <ul class="navList">
+                    <li><a href="index.html" class="navLink">Home</a></li>
+                    <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
+                    <li><a href="about.html" class="navLink last">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <h2 class="title">Portfolio Piece</h2> -->
+
+        <!-- template files go here -->
+        <template id="pieces-template">
+            <div class="piece" data-name="" data-image="" data-description="">
+                <h1 class="hidden"></h1>
+                <img src="temp.jpg" alt="favourite thing image">
+            </div>
+        </template>
+        <!-- end of template -->
+
+        <section class="portfolioPiece">
+            <h2 class="piece-title">Portfolio Piece Title</h2>
+            <p class="piece-description">Description of the piece goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque ipsum ea aliquam delectus vitae possimus adipisci distinctio, maiores voluptatem! Ut, fuga eius? Quidem error consequatur accusantium
+                sint aspernatur tempora!</p>
+            <div class="video mainImg">Place Video or Main image here</div>
+            <div class="carousel">Image carousel goes here</div>
+            <div class="tools">Tools used go here</div>
+
+        </section>
+
+
+
+
+
+
+
+        <footer id="footer">
+            <div class="returnTop">
+                <a href="#" class="returnBtn"><img src="./images/arrow.png" alt="arrow"></a>
+                <p class="returnTxt">Back to Top</p>
+            </div>
+            <div class="footerTxt">
+                <h2 class="heading">Contact</h2>
+                <p>Have questions? Wanna Chat? Interested In Collaborating?</p>
+                <p class="bannerTxt">Shoot me a message and we can talk :)</p>
+                <p>selena.elise.wells@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/modules/gallery.js"></script>
+</body>
+
+</html>

@@ -3,13 +3,38 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 3.125rem 0;
-    .skill {
-        padding-bottom: 3.125rem;
-        .skillBadge {
-            padding: 1.25rem 0;
+    @media (min-width: 600px) {
+        padding: 4rem 0;
+    }
+    .skills {
+        @media (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1500px;
+            padding-bottom: 2rem;
+        }
+        .skill {
+            padding-bottom: 3.125rem;
+            .skillBadge {
+                width: 200px;
+                padding: 1.25rem 0;
+            }
+            @media (min-width: 600px) {
+                box-sizing: border-box;
+                padding: 1.24rem 0;
+                flex-basis: 50%;
+            }
+            @media (min-width: 980px) {
+                box-sizing: border-box;
+                padding: 1.24rem 1.24rem;
+                flex-basis: 25%;
+            }
         }
     }
 }

@@ -1,7 +1,13 @@
 .button {
     @include gradient-button;
+    &:hover {
+        @include gradient-button-hover
+    }
 }
 
 .menuButton {
     width: rem-calc(60);
+    @media (min-width: 700px) {
+        display: none;
+    }
 }

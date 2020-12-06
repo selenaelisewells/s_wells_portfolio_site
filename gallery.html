@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swells Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" class="app">
         <h1 class="hidden">Swells Gallery</h1>
         <nav id="mainNav" class="smallNav">
             <h2 class="hidden">Main Navigation</h2>
@@ -23,23 +25,22 @@
             <div class="navWrap">
                 <ul class="navList">
                     <li><a href="index.html" class="navLink">Home</a></li>
-                    <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
+                    <li><a href="gallery.html" class="navLink">Portfolio</a></li>
                     <li><a href="about.html" class="navLink">About Me</a></li>
+                    <li><a href="contact.html" class="navLink last">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <section id="galleryWrap">
-            <h2 class="title">Portfolio Gallery</h2>
-            <div class="gallery">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
-                <img src="./images/flowerHead.png" alt="flower head">
+            <h2 class="title">Portfolio</h2>
+            <video id="demoReel" controls poster="./images/videoThumb.jpg">
+            
+                <source src="./images/Wells_DemoReel.mp4"  type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <portfolio-container></portfolio-container>
 
-                <!--insert gallery here-->
-            </div>
         </section>
         <footer id="footer">
             <div class="returnTop">
@@ -50,7 +51,7 @@
                 <h2 class="heading">Contact</h2>
                 <p>Have questions? Wanna Chat? Interested In Collaborating?</p>
                 <p class="bannerTxt">Shoot me a message and we can talk :)</p>
-                <p>selena.elise.wells@gmail.com</p>
+                <a href="about.html" class="button">Contact Me</a>
             </div>
         </footer>
     </div>

@@ -7,9 +7,10 @@
     <title>Swells About</title>
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
-<body>
+<body id="app">
     <div id="container">
         <h1 class="hidden">Swells About</h1>
         <nav id="mainNav" class="smallNav">
@@ -23,8 +24,9 @@
             <div class="navWrap">
                 <ul class="navList">
                     <li><a href="index.html" class="navLink">Home</a></li>
-                    <li><a href="gallery.html" class="navLink">Portfolio Gallery</a></li>
+                    <li><a href="gallery.html" class="navLink">Portfolio</a></li>
                     <li><a href="about.html" class="navLink">About Me</a></li>
+                    <li><a href="contact.html" class="navLink last">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,7 +36,8 @@
                 <img class="profilePic" src="./images/Selena.png" alt="selena profile picture">
                 <div class="profileTxtWrap">
                     <h2 class="heading teal">Hi, I'm Selena</h2>
-                    <p class="p-Txt">I am a crazy and quirky artist passionate about creating experiences for people through design. I strive to deliver creative and innovative design solutions.</p>
+                    <p class="p-Txt">I am a crazy and quirky artist passionate about creating experiences for people through design. I strive to deliver creative and innovative design solutions to many different problems. Along with design and front-end developement,
+                        I have a background in video game design and am passionate about 3D design and motion graphics.</p>
                 </div>
 
             </section>
@@ -150,7 +153,7 @@
                 <h2 class="heading">Contact</h2>
                 <p>Have questions? Wanna Chat? Interested In Collaborating?</p>
                 <p class="bannerTxt">Shoot me a message and we can talk :)</p>
-                <p>selena.elise.wells@gmail.com</p>
+                <a href="contact.html" class="button">Contact Me</a>
             </div>
         </footer>
     </div>

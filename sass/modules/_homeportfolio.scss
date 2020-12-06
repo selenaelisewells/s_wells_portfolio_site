@@ -5,12 +5,18 @@
     margin: 0 auto;
     width: 100%;
     .banner {
-        background-image: url(../../images/banner.png);
-        height: rem-calc(650);
+        background-image: url(../images/banner.svg);
+        height: rem-calc(550);
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: cover;
+        background-position: center;
         color: white;
+        @media (min-width: 600px) {
+            width: 100%;
+            background-image: url(../images/bannerLg.svg);
+        }
         .bannerWrap {
             width: 80%;
             margin: 0 auto;
@@ -18,9 +24,30 @@
         }
     }
     .smallGallery {
+        pointer-events: none;
         display: flex;
         flex-direction: column;
         margin-top: rem-calc(-180);
         background-color: white;
+        @media (min-width: 600px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1300px;
+        }
+        img {
+            @media (min-width: 600px) {
+                flex-basis: 50%;
+                width: 100%;
+                height: auto;
+            }
+        }
     }
+}
+
+#demoReel {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
 }

@@ -1,5 +1,19 @@
 .gallery {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    background-color: $green;
+    max-width: 800px;
+    margin: 2rem auto;
+    img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#demoReel {
+    border: 2px solid $dark-blue;
+    border-radius: 4px;
 }
