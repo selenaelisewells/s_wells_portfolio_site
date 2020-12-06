@@ -4,6 +4,8 @@
     flex-direction: column;
     background-image: url(../images/banner.svg);
     height: rem-calc(550);
+    background-size: cover;
+    background-position: center;
     @media (min-width: 600px) {
         background-image: url(../images/bannerLg.svg);
         height: 400px;

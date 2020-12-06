@@ -6,13 +6,14 @@
     width: 100%;
     .banner {
         background-image: url(../images/banner.svg);
-        height: rem-calc(650);
+        height: rem-calc(550);
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: cover;
+        background-position: center;
         color: white;
         @media (min-width: 600px) {
-            background: cover;
             width: 100%;
             background-image: url(../images/bannerLg.svg);
         }
@@ -23,6 +24,7 @@
         }
     }
     .smallGallery {
+        pointer-events: none;
         display: flex;
         flex-direction: column;
         margin-top: rem-calc(-180);

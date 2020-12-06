@@ -1,4 +1,4 @@
-@mixin gradient-button( $background: $primary-gradient, $padding: 1.5rem 3.125rem, $colour: white) {
+@mixin gradient-button( $background: $primary-gradient, $padding: 1rem 3rem, $colour: white) {
     background: $background;
     border-radius: 3.125rem;
     padding: $padding;
@@ -8,7 +8,7 @@
     color: $colour;
 }
 
-@mixin gradient-button-hover( $background: $secondary-gradient, $padding: 1.5rem 3.125rem, $colour: white) {
+@mixin gradient-button-hover( $background: $secondary-gradient, $padding: 1rem 3rem, $colour: white) {
     background: $background;
     border-radius: 3.125rem;
     padding: $padding;

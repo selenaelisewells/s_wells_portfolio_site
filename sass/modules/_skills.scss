@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 3.125rem 0;
     @media (min-width: 600px) {
-        padding: 2rem 0;
+        padding: 4rem 0;
     }
     .skills {
         @media (min-width: 600px) {
@@ -17,6 +17,7 @@
             justify-content: space-around;
             width: 100%;
             max-width: 1500px;
+            padding-bottom: 2rem;
         }
         .skill {
             padding-bottom: 3.125rem;
