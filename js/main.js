@@ -1,10 +1,12 @@
 import { SendMail } from "./modules/mailer.js";
 import { showError, removeError } from "./modules/validator.js";
 import PortfolioContainer from "./components/PortfolioContainer.js";
+import { HomepagePortfolioContainer } from "./components/PortfolioContainer.js";
 (() => {
     let vue = new Vue({
         components: {
-            "portfolio-container": PortfolioContainer
+            "portfolio-container": PortfolioContainer,
+            "homepage-portfolio-container": HomepagePortfolioContainer
         }
     }).$mount(".app");
 
