@@ -48,7 +48,7 @@ const PortfolioOverlay = Vue.component('portfolio-overlay', {
         console.log(this.project);
         window.currentProject = this.project
     },
-    //ask nick how to use a video here ^ this will be the feature image type
+
     //<the list of images goes here>
     template: `
         <div class="overlay-wrap" :class="[open ? 'active': '']">
